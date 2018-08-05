@@ -1,0 +1,48 @@
+/*
+ * Michael Hickey
+ * Professor Carpenter
+ * Lab 9, Inheritance and Classes
+ * Due Date November 21, 2016
+ */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+/**
+ * Description:
+ * This is the base class person that other classes will inherit from.
+ */
+
+class Person_c{
+	protected:
+		string name;
+		string homeCity;
+		int age;
+
+	public:
+		//Default constructor
+		Person_c(){cout << "A Person_c was created." << endl;};
+
+		//Constructor with parameters.
+		Person_c(string n, string h, int a){
+			cout << "A Person_c with arguments was created." << endl;
+			name = n;
+			homeCity = h;
+			age = a;
+		}
+
+		//Default deconstructor
+		~Person_c();
+
+		//Get Functions
+		
+		//Set Functions
+		
+}//end of class Person_c
+
+class Student_c{
+
+
+

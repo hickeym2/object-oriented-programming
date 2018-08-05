@@ -1,0 +1,44 @@
+/*
+ * Michael Hickey
+ * Professor Carpenter
+ * Lab 9 Inheritance and Classes
+ * Due November 21, 2016
+ */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Person_c{
+	protected:
+		string name;
+		string homeCity;
+		int age;
+	public:
+		//Default constructor
+		Person_c(){cout << "A Person_c was created." << endl};
+
+		//Constructor with parameter
+		Person_c(){string name, string home, int age){
+			cout << "A Person_c was created with arguments." << endl;
+			name = name;
+			homeCity = home;
+			age = age;
+		}
+
+		//Defualt deconstructor
+		~Person_c();
+
+		//Get Functions
+
+		//Set Functions
+
+}//end of class Player_c
+
+class Student_c:public Person_c{
+	protected:
+		string school;
+		int class
+
+}//end of class Student_c
